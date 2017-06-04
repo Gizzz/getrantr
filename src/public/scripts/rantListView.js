@@ -5,7 +5,7 @@ var RantView = Backbone.View.extend({
               <img src="${rant.imageURL}" alt="${rant.name}" />
               <div class="rant-content">
                 <div class="status-text text-lg"><strong>${rant.name}</strong></div>
-                <div class="status-text text-lg">${rant.text.substr(0, 140)}</div>
+                <div class="status-text text-lg">${typeof rant.text === "string" ? rant.text.substr(0, 140) : "Invalid data from server."}</div>
               </div>
               <div class="rant-meta">
                 <form><button class="btn btn-link js-delete">delete</button></form>
