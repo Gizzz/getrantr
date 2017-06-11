@@ -1,4 +1,4 @@
-Exercise 6 - Load Performance
+Exercise 6 - Load Performance (fixed - compress and concat resources, load imgs of proper size)
 ================
 
 # Goal
